@@ -6,7 +6,7 @@ from typing import Any, Callable
 import PIL.Image
 from torch.utils import data
 
-from .utils import get_root_dir, get_dataset_split_info
+from .utils import get_dataset_split_info, get_root_dir
 
 
 class Dataset(data.Dataset):
