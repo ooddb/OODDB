@@ -8,7 +8,7 @@ We report here extra details for each dataset, including some visual examples an
 |:-:|:-:|:-:|:-:|:-:|
 | [DomainNet](#domainnet) | ~154k | 100 (50, 50) | 6 | object-centric |
 | [DTD](#dtd) | ~6k | 47 (23, 24) | 1 | textures |
-| [PatternNet](#patternnet) | ~30k | 38 (19, 19) | 1 | aerial pictures |
+| [PatternNet](#patternnet) | ~29k | 38 (19, 19) | 1 | aerial pictures |
 | [Stanford Cars](#stanford-cars) | ~16k | 196 (98, 98) | 1 | fine-grained cars |
 | [SUN](#sun) | ~101k | 397 (198, 199) | 1 | scenes |
 
@@ -71,7 +71,7 @@ The expected image file format is:\
 [Download link](https://nuisteducn1-my.sharepoint.com/:u:/g/personal/zhouwx_nuist_edu_cn/EYSPYqBztbBBqS27B7uM_mEB3R9maNJze8M1Qg9Q6cnPBQ?e=MSf977)
 
 PatternNet is a dataset of high-resolution aerial pictures, designed for remote sensing image retrieval.
-It consists of 38 category containing 800 samples each, for a total of 30,400 images.
+It consists of 38 category containing 800 samples each. In this benchmark, we use a total of 28,800 images.
 For each *data order* we selected 19 classes as ID and the others as OOD, following
 the train-test splits proposed by the original authors.
 
