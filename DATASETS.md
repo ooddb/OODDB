@@ -7,9 +7,9 @@ We report here extra details for each dataset, including some visual examples an
 | | n. images | n. classes (ID, OOD) | n. domains | image type |
 |:-:|:-:|:-:|:-:|:-:|
 | [DomainNet](#domainnet) | ~154k | 100 (50, 50) | 6 | object-centric |
-| [DTD](#dtd) | ~6k | 47 (23, 24) | 1 | textures |
+| [DTD](#dtd) | ~5k | 47 (23, 24) | 1 | textures |
 | [PatternNet](#patternnet) | ~29k | 38 (19, 19) | 1 | aerial pictures |
-| [Stanford Cars](#stanford-cars) | ~16k | 196 (98, 98) | 1 | fine-grained cars |
+| [Stanford Cars](#stanford-cars) | ~15k | 196 (98, 98) | 1 | fine-grained cars |
 | [SUN](#sun) | ~101k | 397 (198, 199) | 1 | scenes |
 
 ## DomainNet
@@ -55,7 +55,7 @@ The root directories for the 6 different domains are expected to be located unde
 [Official website](https://www.robots.ox.ac.uk/~vgg/data/dtd/)\
 [Download link](https://www.robots.ox.ac.uk/~vgg/data/dtd/download/dtd-r1.0.1.tar.gz)
 
-DTD (*Describable Textures Dataset*) contains 5,640 images of textures belonging to 47 different classes.
+DTD (*Describable Textures Dataset*) contains 5,640 images of textures belonging to 47 different classes (we use a total of 5,320 samples).
 For each *data order*, we select 23 random classes as ID and the other 24 as OOD.
 For every train-test split, we follow the first fold provided by the original authors for their cross-validation strategy, merging train and validation data.
 
@@ -71,7 +71,7 @@ The expected image file format is:\
 [Download link](https://nuisteducn1-my.sharepoint.com/:u:/g/personal/zhouwx_nuist_edu_cn/EYSPYqBztbBBqS27B7uM_mEB3R9maNJze8M1Qg9Q6cnPBQ?e=MSf977)
 
 PatternNet is a dataset of high-resolution aerial pictures, designed for remote sensing image retrieval.
-It consists of 38 category containing 800 samples each. In this benchmark, we use a total of 28,800 images.
+It consists of 38 category containing 800 samples each (in this benchmark we use a total of 28,800 images).
 For each *data order* we selected 19 classes as ID and the others as OOD, following
 the train-test splits proposed by the original authors.
 
@@ -87,7 +87,7 @@ The expected image file format is:\
 [Kaggle download link](https://www.kaggle.com/datasets/jessicali9530/stanford-cars-dataset/download?datasetVersionNumber=2)
 
 Stanford Cars is a large-scale, fine-grained dataset of car images.
-It contains 16,185 pictures divided into 196 classes.
+It contains 16,185 pictures divided into 196 classes (we use a total of 15,078 samples).
 We selected 98 random categories as ID for each *data order* and we followed the
 train-test split proposed by the original authors.
 
